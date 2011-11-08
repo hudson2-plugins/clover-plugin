@@ -15,7 +15,7 @@
 
     <artifactId>clover</artifactId>
     <packaging>hpi</packaging>
-    <version>3.1.1-SNAPSHOT</version>
+    <version>3.1.1</version>
     <name>Hudson Clover plugin</name>
     <url>http://wiki.hudson-ci.org/display/HUDSON/Clover+Plugin</url>
     <developers>
