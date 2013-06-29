@@ -8,17 +8,22 @@
     </parent>
 
     <scm>
-        <connection>scm:git:git://github.com/hudson-plugins/clover-plugin.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com/hudson-plugins/clover-plugin.git</developerConnection>
-        <url>https://github.com/hudson-plugins/clover-plugin</url>
+        <connection>scm:git:git://github.com/hudson2-plugins/clover-plugin.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/hudson2-plugins/clover-plugin.git</developerConnection>
+        <url>https://github.com/hudson2-plugins/clover-plugin</url>
     </scm>
 
     <artifactId>clover</artifactId>
     <packaging>hpi</packaging>
-    <version>3.1.6-SNAPSHOT</version>
+    <version>3.1.12-SNAPSHOT</version>
     <name>Hudson Clover plugin</name>
     <url>http://wiki.hudson-ci.org/display/HUDSON/Clover+Plugin</url>
     <developers>
+        <developer>
+            <id>mparfianowicz</id>
+            <email>mparfianowicz@atlassian.com</email>
+            <name>Marek Parfianowicz</name>
+        </developer>
         <developer>
             <id>npellow</id>
             <name>Nick Pellow</name>
@@ -28,7 +33,7 @@
         <dependency>
           <groupId>com.cenqua.clover</groupId>
           <artifactId>clover</artifactId>
-          <version>3.1.5</version>
+          <version>3.1.12</version>
         </dependency>
 
         <!-- Build breaks without these: -->        
@@ -42,6 +47,5 @@
           <artifactId>jfreechart</artifactId>
           <version>1.0.13</version>
         </dependency>
-
     </dependencies>
 </project>
