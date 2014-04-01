@@ -1,21 +1,18 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <parent>
         <groupId>org.jvnet.hudson.plugins</groupId>
         <artifactId>hudson-plugin-parent</artifactId>
         <version>1.398</version>
     </parent>
-
     <scm>
         <connection>scm:git:git://github.com/hudson2-plugins/clover-plugin.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/hudson2-plugins/clover-plugin.git</developerConnection>
         <url>https://github.com/hudson2-plugins/clover-plugin</url>
     </scm>
-
     <artifactId>clover</artifactId>
     <packaging>hpi</packaging>
-    <version>3.2.1-SNAPSHOT</version>
+    <version>3.3.0-SNAPSHOT</version>
     <name>Hudson Clover plugin</name>
     <url>http://wiki.hudson-ci.org/display/HUDSON/Clover+Plugin</url>
     <developers>
@@ -33,10 +30,9 @@
         <dependency>
           <groupId>com.cenqua.clover</groupId>
           <artifactId>clover</artifactId>
-          <version>3.2.0</version>
+          <version>3.3.0</version>
         </dependency>
-
-        <!-- Build breaks without these: -->        
+        <!-- Build breaks without these: -->
         <dependency>
           <groupId>jfree</groupId>
           <artifactId>jcommon</artifactId>
