@@ -12,7 +12,7 @@
     </scm>
     <artifactId>clover</artifactId>
     <packaging>hpi</packaging>
-    <version>3.3.1-SNAPSHOT</version>
+    <version>4.0.0-SNAPSHOT</version>
     <name>Hudson Clover plugin</name>
     <url>http://wiki.hudson-ci.org/display/HUDSON/Clover+Plugin</url>
     <developers>
@@ -28,9 +28,9 @@
     </developers>
     <dependencies>
         <dependency>
-          <groupId>com.cenqua.clover</groupId>
+          <groupId>com.atlassian.clover</groupId>
           <artifactId>clover</artifactId>
-          <version>3.3.0</version>
+          <version>4.0.0</version>
         </dependency>
         <!-- Build breaks without these: -->
         <dependency>
