@@ -9,10 +9,11 @@
         <connection>scm:git:git://github.com/hudson2-plugins/clover-plugin.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/hudson2-plugins/clover-plugin.git</developerConnection>
         <url>https://github.com/hudson2-plugins/clover-plugin</url>
-    </scm>
+      <tag>clover-4.0.0</tag>
+  </scm>
     <artifactId>clover</artifactId>
     <packaging>hpi</packaging>
-    <version>4.0.0-SNAPSHOT</version>
+    <version>4.0.0</version>
     <name>Hudson Clover plugin</name>
     <url>http://wiki.hudson-ci.org/display/HUDSON/Clover+Plugin</url>
     <developers>
