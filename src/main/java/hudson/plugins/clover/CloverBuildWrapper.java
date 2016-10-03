@@ -44,12 +44,14 @@ public class CloverBuildWrapper extends BuildWrapper {
     public boolean historical = true;
     public boolean json = true;
     public String licenseCert;
+    public boolean putValuesInQuotes;
 
     @DataBoundConstructor
-    public CloverBuildWrapper(boolean historical, boolean json, String licenseCert) {
+    public CloverBuildWrapper(boolean historical, boolean json, String licenseCert, boolean putValuesInQuotes) {
         this.historical = historical;
         this.json = json;
         this.licenseCert = licenseCert;
+        this.putValuesInQuotes = putValuesInQuotes;
     }
 
     @Override
@@ -83,10 +85,11 @@ public class CloverBuildWrapper extends BuildWrapper {
         final DescriptorImpl descriptor = Hudson.getInstance().getDescriptorByType(DescriptorImpl.class);
 
         final String license = Util.nullify(licenseCert) == null ? descriptor.licenseCert : licenseCert;
-        final CIOptions.Builder options = new CIOptions.Builder().
-                json(this.json).
-                historical(this.historical).
-                fullClean(true);
+        final CIOptions.Builder options = new CIOptions.Builder()
+                .json(this.json)
+                .historical(this.historical)
+                .fullClean(true)
+                .putValuesInQuotes(this.putValuesInQuotes);
 
         final Launcher outer = launcher;
         return new CloverDecoratingLauncher(outer, options, license);
